@@ -1,9 +1,11 @@
 #!/usr/bin/node
+/* eslint-disable */
+const axios = require('axios');
 
-const request = require('request');
-
-const url = process.argv[2];
-
-request.get(url).on('response', function (response) {
-  console.log(`code: ${response.statusCode}`);
-});
+axios.get(process.argv[2])
+  .then((response) => {
+    console.log(`code: ${response.status}`);
+  })
+  .catch((error) => {
+    console.error(error.message);
+  });
