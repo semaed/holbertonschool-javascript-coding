@@ -1,4 +1,4 @@
-/* enlist-disable */
+/* eslint-disable */
 const fs = require('fs');
 
 function countStudents(path) {
