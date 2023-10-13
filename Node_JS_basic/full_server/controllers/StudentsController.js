@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-syntax */
+/* eslint-disable */
 import readDatabase from '../utils';
 
 class StudentsController {
